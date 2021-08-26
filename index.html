@@ -1,8 +1,3 @@
-<?php 
-require 'calculator.php';
-require_once 'calculator_functions.php'; 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,30 +10,28 @@ require_once 'calculator_functions.php';
     <div class="calculator">
         <h2>Calculator</h2>
         <form method="POST">
-            <input type="hidden" name="input" value='<?php echo json_encode($input); ?>'/>
-            <input type="text" class="calculator-screen" value="<?php echo getInputAsString($input); ?>" disabled/>
-            <div class="calculator-keys">
-                <button type="submit" name="ce" value="ce">ce</button>
-                <button type="submit" class="all-clear" name="c" value="c">c</button>
-                <button type="submit" name="back" value="back">&#8592;</button>
-                <button type="submit" class="operator" name="divide" value="/">&#247;</button>
-                <button type="submit" name="7" value="7">7</button>
-                <button type="submit" name="8" value="8">8</button>
-                <button type="submit" name="9" value="9">9</button>
-                <button type="submit" class="operator" name="multiply" value="x">x</button>
-                <button type="submit" name="4" value="4">4</button>
-                <button type="submit" name="5" value="5">5</button>
-                <button type="submit" name="6" value="6">6</button>
-                <button type="submit" class="operator" name="subtract" value="-">-</button>
-                <button type="submit" name="1" value="1">1</button>
-                <button type="submit" name="2" value="2">2</button>
-                <button type="submit" name="3" value="3">3</button>
-                <button type="submit" class="operator" name="add" value="+">+</button>
-                <button type="submit" name="plusminus" value="+-">&#177;</button>
-                <button type="submit" name="zero" value="0">0</button>
-                <button type="submit" class="decimal" name="decimal" value=".">.</button>
-                <button type="submit" class="equal" name="equal" value="=">=</button>
-            </div>
+          <div class="calculator-keys">
+              <button type="submit" name="ce" value="ce">ce</button>
+              <button type="submit" class="all-clear" name="c" value="c">c</button>
+              <button type="submit" name="back" value="back">&#8592;</button>
+              <button type="submit" class="operator" name="divide" value="/">&#247;</button>
+              <button type="submit" name="7" value="7">7</button>
+              <button type="submit" name="8" value="8">8</button>
+              <button type="submit" name="9" value="9">9</button>
+              <button type="submit" class="operator" name="multiply" value="x">x</button>
+              <button type="submit" name="4" value="4">4</button>
+              <button type="submit" name="5" value="5">5</button>
+              <button type="submit" name="6" value="6">6</button>
+              <button type="submit" class="operator" name="subtract" value="-">-</button>
+              <button type="submit" name="1" value="1">1</button>
+              <button type="submit" name="2" value="2">2</button>
+              <button type="submit" name="3" value="3">3</button>
+              <button type="submit" class="operator" name="add" value="+">+</button>
+              <button type="submit" name="plusminus" value="+-">&#177;</button>
+              <button type="submit" name="zero" value="0">0</button>
+              <button type="submit" class="decimal" name="decimal" value=".">.</button>
+              <button type="submit" class="equal" name="equal" value="=">=</button>
+          </div>
         </form>
     </div>
 </body>
